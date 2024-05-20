@@ -1,8 +1,50 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Motion Art Clone
 
-Currently, two official plugins are available:
+This template provides a minimal setup to get React working in Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+
+Installing Vite+React
+
+```bash
+  npm create vite@latest
+  npm install
+```
+
+Installing Tailwind
+
+```bash
+  npm install -D tailwindcss
+  npx tailwindcss init
+```
+
+Configure your `tailwind.config.js`
+```bash
+  /** @type {import('tailwindcss').Config} */
+  module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Add the Tailwind directives to your CSS `src/input.css`
+```bash
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+```
+
+    
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run dev
+```
+
