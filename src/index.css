@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", "Helvetica Neue",;
+}
+.Navbar{
+  height: 65px;
+  width: 100%;
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+}
+.background{
+  background-color: #0e0f1a;
+}
+.buy {
+  background: #6f9a37;
+  border-radius: 5px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 1px;
+}
+.buy:active .buyFront {
+  transform: translateY(-2px);
+}
+.buyFront {
+  display: block;
+  padding: 3px 14px;
+  border-radius: 5px;
+  background: #82b440;
+  color: white;
+  transform: translateY(-3px);
+}
+.buyFront:hover{
+  background-color: #76a43a;
+} 
+
+.purchase:hover{
+  background-color: #0e0f1a;
+}
+.LinearText{
+  background: linear-gradient(to right, #f97415, #b84b77, #5e11ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.Body{
+  color: #eee5ff
+}
+.mid-text{
+  color: #b4aec4
+}
+.grad{
+  background: linear-gradient(to right, #5e11ff , #882dc7, #f77518);
+}
+.grad2 {
+  background: linear-gradient(to bottom, #0d061f, #251e35) padding-box,
+              linear-gradient(to top, #0d061f, #251e35) border-box;
+  border-radius: 30px;
+  border: 2px solid transparent;
+}
+
+.grad3{
+  background-image: linear-gradient(to right, #f77515, #ac4497, #5e11ff);
+}
