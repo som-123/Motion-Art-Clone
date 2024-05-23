@@ -1,19 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Body from './components/Body'
+import "./App.css";
+import { useRef, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Body from "./components/Body";
+import Fluid from "webgl-fluid";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const canvas = useRef(null);
+
+  useEffect(function () {
+    let c = canvas.current;
+    Fluid(c);
+  }, []);
 
   return (
     <>
-      <Navbar/>
-      <div className="background w-screen">
-        <Body/>
-      </div>
+      <Navbar />
+      <canvas ref={canvas} style={{ width: "100%", height: "100%" }}></canvas>
+      <Body />
     </>
-  )
+  );
 }
-
-export default App
